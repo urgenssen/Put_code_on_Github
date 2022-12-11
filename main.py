@@ -5,7 +5,7 @@ from urllib.parse import urlparse
 from dotenv import load_dotenv
 
 
-def make_parser():
+def make_command_line_parser():
 
     parser = argparse.ArgumentParser(
         description="Makes short links from your URL or \
@@ -69,7 +69,7 @@ if __name__ == "__main__":
     load_dotenv()
 
     user_token = os.environ["BITLY_TOKEN"]
-    user_input = make_parser()
+    user_input = make_command_line_parser()
 
     if is_bitlink(user_token, user_input):
         try:
