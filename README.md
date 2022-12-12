@@ -16,6 +16,14 @@ In this file you need to put your access token (variable `BITLY_TOKEN`) for API 
 
 ### Run
 
+usage: main.py [-h] url
+
+positional arguments:
+  url         Your URL or bitlink
+
+optional arguments:
+  -h, --help  show this help message and exit
+  
 Launch on Linux or Windows as simple
 
 ```bash
